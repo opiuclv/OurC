@@ -1,0 +1,263 @@
+Proj3 test by myself
+
+1
+cin << "123" ; // 錯在'<<' unex
+cin >> "123" ; // 判斷文法就好
+cout << "123" ; // 沒有換行字元就不用換行
+int w ;
+w = 1 ;
+cout << w ;
+cout << w << k ; // 應當不會印出東西 因為 k undefined
+bool k ;
+k = 1 ;
+cout << k ; // 不確定應該印出 1 還是 true 
+w = w + 1 ;
+k = false ;
+cout << w << k << "\n" ;
+Done()
+
+1
+int a ;
+a = 3 ;
+cout << a ;
+
+int b ;
+b = 5 ;
+cout << a << b ;
+
+a = a + b ;
+cout << a ;
+
+int c ;
+c = 7 ;
+cout << ( c = a + b ) ;
+
+Done() 
+
+
+1
+string a ;
+a = "123" ;
+cout << a ;
+
+1
+int a ;
+a = 1 ;
+cout << a ;
+Done()
+
+1
+int a ;
+int b ;
+a = 10 ;
+b = 5 ;
+cout << ( a = 1 + 2 ) << b ;
+Done()
+
+
+1
+int a1, a2, a3 ;
+a1 = 10 ;
+a2 = 20 ;
+a3 = -30 ;
+cout << ( a1 = a2+a3 ) << "\n" ;
+float k ;
+k = 3.5 ;
+cout << k << "\n" ;
+cout << 3.7 << "\n" ;
+Done()
+
+1
+int a1, a2, a3 ;
+a1 = 10 ;
+a2 = 15 ;
+a3 = 30 ;
+cout << ( a1 = a2+a3*3 ) << "\n" << "123" ;
+Done()
+
+
+
+1
+  // preparation
+
+  int a1, a2, a3, k, k2 ;
+
+  // Problem 1 and 2 : test data 1/3 (viewable)
+
+  a1 = 10 ;
+  a2 = 20 ;
+  a3 = -30 ;
+  k = 6 ;
+  k2 = 2 ;
+
+    // + - * / %
+  cout << ( a1 = a2+a3*3 ) << "\n" ;
+  cout << a1-305%a2 << "\n" ;
+  cout << ( a2 = 300/a2+a1 ) << "\n" ;  
+  cout << a1- -a2 << "\n" ;
+  cout << ( k = k/k2 ) << "\n" ; 
+
+
+1
+// preparation
+
+int a1, a2, a3 ;
+bool b1, b2, b3 ;
+
+a1 = 10 ;
+a2 = 20 ;
+a3 = -30 ;
+
+b1 = false ;
+b2 = false ;
+b3 = false ;
+
+cout << ( b1 || false ) << "\n" ; // false
+cout << ( !b1 || false ) << "\n" ; // true
+cout << ( b1 = false || !b2 ) << "\n" ; // true
+cout << ( b1 || false ) << "\n" ; // true
+
+1
+bool b1, b2, b3 ;
+b1 = true ;
+b2 = false ;
+b3 = false ;
+cout << ( b1 && b2 ) << "\n" ; // false
+cout << ( b1 || b2 ) << "\n" ; // true
+cout << ( b2 && b3 ) << "\n" ; // false
+cout << ( b2 || b3 ) << "\n" ; // false
+cout << ( b1 && !b2 ) << "\n" ; // true
+
+
+1
+// preparation
+
+int a1, a2, a3 ;
+float f1, f2, f3 ;
+bool b1, b2, b3 ;
+
+// Problem 1 and 2 : test data 1/3 (viewable)
+
+a1 = 10 ;
+a2 = 20 ;
+a3 = -30 ;
+f1 = 1.5 ;
+f2 = 0.25 ;
+f3 = -0.125 ;
+
+// && || ! < <= > >=
+cout << ( b1 = f1 > f2 ) << "\n" ; // true
+cout << ( b2 = a1 >= a2 ) << "\n" ; // false
+
+cout << b2 << "\n" ;
+cout << ( b1 = false || !b2 ) << "\n" ; // true
+cout << b1 << "\n" ; // true
+cout << ( b1 || false ) << "\n" ; // true
+
+
+
+1
+// preparation
+
+int a1, a2, a3 ;
+float f1, f2, f3 ;
+bool b1, b2, b3 ;
+string s1, s2, s3 ;
+char c1, c2, c3 ;
+
+// Problem 1 and 2 : test data 1/3 (viewable)
+
+a1 = 10 ;
+a2 = 20 ;
+a3 = -30 ;
+f1 = 1.5 ;
+f2 = 0.25 ;
+f3 = -0.125 ;
+s1 = "Hi" ;
+s2 = "Hello" ;
+s3 = "What" ;
+c1 = 'a' ;
+c2 = 'b' ;
+c3 = 'c' ;
+
+// + - * / %
+cout << ( a1 = a2+a3*3 ) << "\n" ;
+cout << a1-305%a2 << "\n" ;
+cout << ( a2 = 300/a2+a1 ) << "\n" ;  
+cout << a1- -a2 << "\n" ;
+
+// << >>
+cout << a2 << "\n" ;
+cout << ( a2 = a2 << 2 ) << "\n" ;
+cout << ( a2 = a2 >> 2 ) << "\n" ;
+
+// && || ! < <= > >=
+cout << ( b1 = f1 > f2 ) << "\n" ;
+cout << ( b2 = a1 >= a2 ) << "\n" ;
+cout << ( b3 = b1 && b2 ) << "\n" ;
+
+cout << ( b3 || a3 < a1 ) << "\n" ;
+cout << ( b3 || b2 ) << "\n" ;
+cout << ( b3 || !b2 ) << "\n" ;
+
+cout << ( true && a3 < a1 ) << "\n" ;
+cout << ( true || b2 ) << "\n" ;
+cout << b1 << "\n" ;
+cout << b2 << "\n" ;
+cout << ( b1 = false || !b2 ) << "\n" ;
+cout << ( b1 || false ) << "\n" ;
+
+
+1
+string s1, s2, s3 ;
+s1 = "Hi" ;
+s2 = "Hello" ;
+s3 = "What" ;
+// string
+cout << ( s1 = s1 + " " + s2 ) << "\n" ;
+cout << s1 << "\n" ;
+cout << ( s3 = s3 + " " + c1 ) << "\n" ;
+cout << s1 + "\n" + s3 << "\n" ;
+Done()
+
+
+
+
+1
+// preparation
+
+int a1, a2, a3 ;
+float f1, f2, f3 ;
+bool b1, b2, b3 ;
+string s1, s2, s3 ;
+char c1, c2, c3 ;
+
+// Problem 1 and 2 : test data 1/3 (viewable)
+
+a1 = 10 ;
+a2 = 20 ;
+a3 = -30 ;
+f1 = 1.5 ;
+f2 = 0.25 ;
+f3 = -0.125 ;
+
+// && || ! < <= > >=
+cout << ( b1 = f1 > f2 ) << "\n" ;
+cout << b1 << "\n" ;
+cout << ( b2 = a1 >= a2 ) << "\n" ;
+cout << b2 << "\n" ;
+cout << ( b3 = b1 && b2 ) << "\n" ;
+cout << b3 << "\n" ;
+
+cout << ( b1 = false || !b2 ) << "\n" ;
+cout << b1 << "\n" ;
+cout << b2 << "\n" ;
+cout << ( b1 || false ) << "\n" ;
+cout << b1 << "\n" ;
+cout << b2 << "\n" ;
+
+
+
+目前測試一下把布林運算的結果存入gCout
+Temp_data_prepare_to_cout應該加入在準備進入下一個LS的時候
+

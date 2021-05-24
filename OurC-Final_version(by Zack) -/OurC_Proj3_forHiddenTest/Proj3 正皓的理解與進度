@@ -1,0 +1,46 @@
+Proj3 正皓的理解與進度
+
+1. 目前需新增cin 與 cout的 後續 operator cin '>>' && cout '<<' 看有沒有接錯 (完成)
+2. cout 需要整個判斷完到分號才能印出來 而 數值 與 布林 與 字串需分開處理 
+3. 理解如果cout錯誤 那其中的expression應該要不要改動其值
+
+
+
+3. variable 儲存 value 的情況需新增
+4. 遇到加上sign的處理
+5. 只有have_defined或是vari_in_func_temp_defi 的變數需要取值 is_funtion_defined的'不用''
+
+
+
+6. 計算的處理
+
+
+
+變數在定義時把 name 與 detail_type 存入 ALL_variable_name_and_value 裡面, 如果是 New defi 就沿用 name 只要改 detail_type 就好
+變數在做 assignment 時 , 在 ALL_variable_name_and_value 改 value 就好 ( 先不要管 coercion的問題 )
+
+
+
+已經將所有definiton的變數名稱存入 ALL_variable_name_and_value 裡面
+下一步要做把 gValue的所有處理 ex. constant的值存入gValue處理 應先分類constant有哪些該怎麼存 只有數字需要進入gValue那 true false又該如何記錄
+
+
+'=='和'！='不應應用於布林值
+
+
+gValue[0]
+gValue[1]
+gValue[2]
+gValue[3]
+gValue[4]
+gValue[5]
+gValue[6]
+gValue.size()
+gToken[gNum].data
+gToken[gNum].token_type
+gToken[gNum-1].data
+gToken[gNum-1].token_type
+gToken[gNum-2].data
+gToken[gNum-2].token_type
+gCout_Token.size()
+gBool_Ans.size()

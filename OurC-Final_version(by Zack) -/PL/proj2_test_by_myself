@@ -1,0 +1,254 @@
+1
+int x ;
+x = 10;
+x = ( 1 + 2 ) ;
+x = (1 + 2  ;
+cout << x ;
+Done()
+
+
+
+1
+int x ;
+String str ;
+string str;//comment should be skipped
+char chArray[30] ;
+cin >> chArray1 ;  // undeclared identifier
+cin >> chArray ;
+string str;
+str = ( 1 + 2 ) ;
+str = ( 1 + 2 2 ;
+str = ( 1 + 2 ;
+cout << str ;
+cin >> str ;
+Done()
+
+
+1
+float hello ;
+int x ;
+hello = 20
+        *           // comment should be skipped
+        ( ( x - hello ) / 34.5 
+          - 17   // to the right is comment : + ( hello - x
+          - ( hello - x ) 
+        ) 
+        ;
+x=(x+8)/hello/(hello-8.0);
+
+Done()
+
+
+1
+int . ;
+x + 1 + 3 ;
+int x ;
+x + ~ + 3 ;
+string str ;
+cout >> str ;
+cin << # ;
+Done()
+
+
+1
+x + . + 1 ;
+a + 1 ;
+int x ;
+Done()
+
+
+3
+int first ;
+int second, max ;
+cin >> First ; int first ;
+cin >> first 
+    >> second ;
+
+3
+int first ;
+int second, max ;
+while ( ( max >= ( first - second ) 
+        )
+        ||
+        ( max > 100 ) 
+      ) {
+  first = first + second ;
+  max-- ;
+} // while ( max >= 0 )
+
+1
+float hello ;
+int x ;
+hello = 20
+        * 
+        ( ( x - hello135 ) / 34.5  // undeclared identifier
+          - 17   // input restarts from this line
+          - ( hello - x ) 
+        )        // but then, this ')' is unexpected
+        ;        // a null statement is fine though
+Done()
+
+1
+int x ;
+((hello -
+- 17   // input restarts from this line
+- ( x - x ) 
+        )        // but then, this ')' is unexpected
+        ;        // a null statement is fine though
+
+
+        1
+
+Done()
+
+
+1
+int AddFive( int x ) { int y ; y = AddTwo( x ) ; // comment
+                       return y + 3 ; }          // comment
+Done()
+
+
+1
+int AddTwo( int x ) { return x + 2 ; } // comment
+int AddFive( int x ) { return y + 3 ; } // comment
+int x ;
+x = x + AddFive( x ) ;
+if ( x > 200 )
+  x = AddTwo( 300 ) ;
+else
+  x = x + AddFive( 200 ) + 5 ;
+Done()
+
+3
+int AddTwo( int x ) { return x + 2 ; } // comment
+int AddFive( int x ) { int y ; y = AddTwo( x ) ; // comment
+                       return y + 3 ; }          // comment
+ListAllFunctions() ;
+int AddTai( int x ) { return x -3 ; } // comment
+ListAllFunctions() ;
+ListFunction( "AddFive" ) ;
+ListFunction( "AddTwo" ) ;
+Done() ;
+
+
+3
+int AddFive( int x ) { int y ; y = AddTwo( x ) ; // comment
+                       return y + 3 ; }          // comment
+ListAllFunctions() ;
+ListFunction( "AddFive" ) ;
+Done() ;
+
+1
+int x ;
+if ( x > 200 )
+  x = 5 + AddThree( 300 ) ;
+else
+  x = x + AddFive( 200 ) + 5 ;
+Done() ;
+
+
+3
+void InputSalary( int revenue[ 30 ] ) {
+  int i ;
+  i = 0 ;
+  while ( i < 30 ) {
+    cin >> revenue[ i ]  // 因為沒有分號 所以下一個接i會錯 幹!!!!
+    i++;
+    i=i+1; // > Line 1 : undefined identifier : 'i'
+  } // while ( i < 30 )
+} // InputSalary()
+Done() 
+
+
+
+
+
+1
+void InputSalary( int revenue[ 30 ] ) {
+  int i ;
+  i = 0 ;
+  while ( i < 30 ) {
+    cin >> revenue[ i ] ;
+    i++ ;
+  } // while ( i < 30 )
+} // InputSalary()
+
+void Sort(int intArray[30]) {
+  int i;
+  i=0;
+  while(i<29){
+    int j;
+    j=i;
+    while(j<30){
+      if(intArray[j]<intArray[i]){
+      int temp;
+      temp=intArray[i];
+      intArray[i]=intArray[j];
+      intArray[j] =temp;
+      } // if intArray[ j ] < intArray[ i ]
+      j++ ;
+    } // while j < 30
+    i++ ;
+  } // while i < 29
+} // Sort()
+
+void InputSalary( int revenue[ 30 ] ) {
+  int i ;
+  i = 0 ;
+  while ( i < 30 ) {
+    cin >> revenue[ i ] ;
+    i++ ;
+  } // while ( i < 30 )
+} // InputSalary()
+
+void OutputSalary( int revenue[ 30 ] ) {
+  int i ;
+  i = 0 ;
+  while ( i < 30 ) {
+    cout << revenue[ i ] ;
+    i++ ;
+  } // while ( i < 30 )
+} // OutputSalary()
+
+ListAllFunctions() ;
+
+ListFunction( "Sort" ) ;
+
+
+Done()
+
+
+1
+
+int salary[30] ;
+
+
+void InputSalary( int revenue[ 30 ] ) {
+  int i ;
+  i = 0 ;
+  while ( i < 30 ) {
+    cin >> revenue[ i ] ;
+    i++ ;
+  } // while ( i < 30 )
+} // InputSalary()
+
+InputSalary( salary ) ;
+
+
+
+Done()
+
+
+1
+float hello ;
+int x ;
+hello = 20
+        * 
+        ( ( x - hello135 ) / 34.5  // undeclared identifier
+          - 17   // input restarts from this line
+          - ( hello - x ) 
+        )        // but then, this ')' is unexpected
+        ;        // a null statement is fine though
+Done();
+
+

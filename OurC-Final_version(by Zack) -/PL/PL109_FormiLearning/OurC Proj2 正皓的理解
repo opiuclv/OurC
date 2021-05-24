@@ -1,0 +1,36 @@
+OurC Proj2 正皓的理解
+
+
+你的程式由兩個部分 syntax checker and a pretty printer 組成
+
+你的程式必須支援以下function，意思就是使用者可以呼叫以下funtion來印出結果
+ListAllVariables();          // just the names of the (global) variables, 
+                                      // sorted (from smallest to greatest)
+ListAllFunctions();          // just the names of the (user-defined) 
+                                       // functions, sorted
+ListVariable(char name[]);   // the definition of a particular variable
+ListFunction(char name[]);   // the definition of a particular function
+Done();                            // exit the interpreter
+
+
+
+在error message的部分，共有三種error messages。其例如下：
+
+unrecognized token with first char : '$'         // lexical error
+unexpected token : '*'                           // syntactical error (token recognized)
+undefined identifier : 'bcd'                     // semantic error (grammar ok)
+
+
+如何計算目前的line是多少，每次print完line就會重置，其他情況都是遇到\n就 line ++ 
+
+
+Funtion的定義 只要funtion還沒跑完 遇到error的話error以上的funtion內容都不算數 包含已經定義過的變數
+
+
+1
+a:= 1 ;
+a + 6 - 1 ;
+
+Done() 的錯誤還沒處理好 ex. Done(123)錯在哪
+
+

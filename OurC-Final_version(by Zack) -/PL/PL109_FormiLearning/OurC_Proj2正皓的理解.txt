@@ -1,0 +1,13 @@
+OurC Proj2 正皓的理解
+
+
+你的程式由兩個部分 syntax checker and a pretty printer 組成
+
+你的程式必須支援
+ ListAllVariables();          // just the names of the (global) variables, 
+                                          // sorted (from smallest to greatest)
+  ListAllFunctions();          // just the names of the (user-defined) 
+                                           // functions, sorted
+  ListVariable(char name[]);   // the definition of a particular variable
+  ListFunction(char name[]);   // the definition of a particular function
+  Done();                            // exit the interpreter
